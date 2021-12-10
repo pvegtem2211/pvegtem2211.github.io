@@ -1,0 +1,135 @@
+body{
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+
+.menu {
+    text-align: center;
+    border:1px gainsboro solid;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0.2em;
+
+}
+
+.menu:hover {
+    font-weight: bold;
+}
+
+.cuerpoPagina {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+
+}
+
+.zonaArticulosGrande {
+    /* Combinando las 2 siguientes propiedades consigo distribuir el tamaño de esta clase
+    Importante poner el flex-basis: 0 para que no cree espacios raros */
+    flex-grow: 2;
+    flex-basis: 0;
+    margin: .5em;
+}
+
+.columnaArticulosPequeños {
+    /* Combinando las 2 siguientes propiedades consigo distribuir el tamaño de esta clase
+    Importante poner el flex-basis: 0 para que no cree espacios raros*/
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: .5em;
+}
+
+.articuloIzquierda {
+    width: auto;
+    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+    align-content: flex-start;
+
+    padding: 1em;
+    margin: .5em;
+}
+
+.textos {
+    
+    flex-grow: 1;
+    flex-basis: 0;
+
+    padding-right: 1em;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:stretch;
+
+    /*width: 0%;*/
+    
+}
+
+.imagenArticulo { 
+   /* flex-grow: 1;
+    flex-basis: 0;
+*/
+    width: 250px;;
+    
+}
+
+.imagenArticulo img {
+   
+    width: 250px;
+    height: 250px;
+   
+
+
+}
+
+.articuloPequeño {
+    padding: 1em;
+    margin: .5em;
+}
+
+.imagenArticuloPequeño img {
+    width: 250px;
+    height: 150px;
+}
+
+.tituloArticulo {
+    flex-grow: 1;
+}
+
+.TextoArticulo {
+    flex-grow: 1;
+/*width: auto;*/
+
+}
+
+.tituloArticulo, .tituloArticuloPequeño {
+    font-weight: bold;
+    font-size: large;
+}
+
